@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 import heroBackground from '../../assets/hero-background.svg'
 
-export const HomeContainer = styled.main`
-  display: flex;
-`
+export const HomeContainer = styled.main``
 
 export const Hero = styled.section`
   display: flex;
@@ -74,9 +72,28 @@ export const Hero = styled.section`
       }
     }
   }
+`
 
-  img {
-    width: 29.75rem;
-    height: 22.5rem;
+export const CoffeeList = styled.section`
+  padding: 2rem 10rem 9.81rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.38rem;
+
+  h2 {
+    color: ${({ theme }) => theme.colors['base-subtitle']};
+
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 130%;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2.5rem 2rem;
   }
 `
+
+
